@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		EDFCA41119CEA5B5007729B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFCA41019CEA5B5007729B5 /* AppDelegate.swift */; };
-		EDFCA41319CEA5B5007729B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFCA41219CEA5B5007729B5 /* ViewController.swift */; };
 		EDFCA41619CEA5B5007729B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFCA41419CEA5B5007729B5 /* Main.storyboard */; };
 		EDFCA41819CEA5B5007729B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFCA41719CEA5B5007729B5 /* Images.xcassets */; };
 		EDFCA41B19CEA5B5007729B5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDFCA41919CEA5B5007729B5 /* LaunchScreen.xib */; };
 		EDFCA42719CEA5B5007729B5 /* skhrottenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFCA42619CEA5B5007729B5 /* skhrottenTests.swift */; };
+		EDFCA43119CEA5E1007729B5 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFCA43019CEA5E1007729B5 /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		EDFCA40B19CEA5B5007729B5 /* skhrotten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skhrotten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFCA40F19CEA5B5007729B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDFCA41019CEA5B5007729B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDFCA41219CEA5B5007729B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EDFCA41519CEA5B5007729B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDFCA41719CEA5B5007729B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EDFCA41A19CEA5B5007729B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EDFCA42019CEA5B5007729B5 /* skhrottenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skhrottenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFCA42519CEA5B5007729B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDFCA42619CEA5B5007729B5 /* skhrottenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skhrottenTests.swift; sourceTree = "<group>"; };
+		EDFCA43019CEA5E1007729B5 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				EDFCA41019CEA5B5007729B5 /* AppDelegate.swift */,
-				EDFCA41219CEA5B5007729B5 /* ViewController.swift */,
 				EDFCA41419CEA5B5007729B5 /* Main.storyboard */,
 				EDFCA41719CEA5B5007729B5 /* Images.xcassets */,
 				EDFCA41919CEA5B5007729B5 /* LaunchScreen.xib */,
 				EDFCA40E19CEA5B5007729B5 /* Supporting Files */,
+				EDFCA43019CEA5E1007729B5 /* MoviesViewController.swift */,
 			);
 			path = skhrotten;
 			sourceTree = "<group>";
@@ -212,8 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDFCA41319CEA5B5007729B5 /* ViewController.swift in Sources */,
 				EDFCA41119CEA5B5007729B5 /* AppDelegate.swift in Sources */,
+				EDFCA43119CEA5E1007729B5 /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
