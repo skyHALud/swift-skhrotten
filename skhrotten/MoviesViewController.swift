@@ -26,12 +26,20 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 100
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = UITableViewCell()
-        cell.textLabel?.text = "Hello, I'm at row: \(indexPath.row), section: \(indexPath.section)"
+        
+        println("I'm at row: \(indexPath.row), section: \(indexPath.section)")
+        
+        var cell = tableView.dequeueReusableCellWithIdentifier("MovieCell") as MovieCell
+        
+        cell.titleLabel?.text = "Title"
+        cell.synopsisLabel?.text = "Synopsis"
+        
+        //var cell = UITableViewCell()
+        //cell.textLabel?.text = "Hello, I'm at row: \(indexPath.row), section: \(indexPath.section)"
         
         return cell
     }

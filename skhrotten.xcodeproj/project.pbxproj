@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EDE68C0719D5503C00B0558C /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE68C0619D5503C00B0558C /* MovieCell.swift */; };
 		EDFCA41119CEA5B5007729B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFCA41019CEA5B5007729B5 /* AppDelegate.swift */; };
 		EDFCA41619CEA5B5007729B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFCA41419CEA5B5007729B5 /* Main.storyboard */; };
 		EDFCA41819CEA5B5007729B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFCA41719CEA5B5007729B5 /* Images.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EDE68C0619D5503C00B0558C /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		EDFCA40B19CEA5B5007729B5 /* skhrotten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skhrotten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFCA40F19CEA5B5007729B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDFCA41019CEA5B5007729B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				EDFCA41919CEA5B5007729B5 /* LaunchScreen.xib */,
 				EDFCA40E19CEA5B5007729B5 /* Supporting Files */,
 				EDFCA43019CEA5E1007729B5 /* MoviesViewController.swift */,
+				EDE68C0619D5503C00B0558C /* MovieCell.swift */,
 			);
 			path = skhrotten;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				EDFCA41119CEA5B5007729B5 /* AppDelegate.swift in Sources */,
 				EDFCA43119CEA5E1007729B5 /* MoviesViewController.swift in Sources */,
+				EDE68C0719D5503C00B0558C /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +409,7 @@
 				EDFCA42C19CEA5B5007729B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDFCA42D19CEA5B5007729B5 /* Build configuration list for PBXNativeTarget "skhrottenTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				EDFCA42F19CEA5B5007729B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
