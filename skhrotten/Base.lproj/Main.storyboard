@@ -44,6 +44,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="posterView" destination="sso-2c-1lu" id="waV-DL-eao"/>
                                             <outlet property="synopsisLabel" destination="wbm-vb-zZf" id="fIx-Sj-aRc"/>
                                             <outlet property="titleLabel" destination="dI8-Im-gx0" id="IB8-aa-sTs"/>
                                         </connections>

@@ -55,6 +55,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         cell.titleLabel?.text = movie["title"] as? String
         cell.synopsisLabel?.text = movie["synopsis"] as? String
         
+        var posters = movie["posters"] as NSDictionary
+        var posterUrl = posters["thumbnail"] as String
+        cell.posterView.setImageWithURL(NSURL(string: posterUrl))
+        
         //http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=eyn65g8a72bac4u3wbm7d2je&country=us
         
         //var cell = UITableViewCell()
