@@ -22,7 +22,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         var url = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=eyn65g8a72bac4u3wbm7d2je&country=us"
         
-        var request = NSURLRequest(URL: NSURL(string:url))
+        var request = NSURLRequest(URL:NSURL(string:url)!)
         
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response:NSURLResponse!, data:NSData!, error:NSError!) -> Void in
             var object = NSJSONSerialization.JSONObjectWithData(data, options: nil, error:nil) as NSDictionary
