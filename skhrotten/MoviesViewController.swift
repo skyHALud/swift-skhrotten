@@ -25,11 +25,11 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         var request = NSURLRequest(URL:NSURL(string:url)!)
         
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response:NSURLResponse!, data:NSData!, error:NSError!) -> Void in
-            var object = NSJSONSerialization.JSONObjectWithData(data, options: nil, error:nil) as NSDictionary
+            var object = NSJSONSerialization.JSONObjectWithData(data, options: nil, error:nil) as! NSDictionary
             
             //println("object: \(object)")
             
-            self.movies = object["movies"] as [NSDictionary]
+            self.movies = object["movies"] as! [NSDictionary]
             
             self.tableView.reloadData()
         }
@@ -48,15 +48,15 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         println("I'm at row: \(indexPath.row), section: \(indexPath.section)")
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("MovieCell") as MovieCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("MovieCell") as! MovieCell
         
         var movie = movies[indexPath.row]
         
         cell.titleLabel?.text = movie["title"] as? String
         cell.synopsisLabel?.text = movie["synopsis"] as? String
         
-        var posters = movie["posters"] as NSDictionary
-        var posterUrl = posters["thumbnail"] as String
+        var posters = movie["posters"]as! NSDictionary
+        var posterUrl = posters["thumbnail"] as! String
         cell.posterView.setImageWithURL(NSURL(string: posterUrl))
         
         //http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?apikey=eyn65g8a72bac4u3wbm7d2je&country=us
