@@ -20,11 +20,19 @@ PODS:
   - AFNetworking/UIKit (2.4.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Crashlytics (3.0.11)
+  - Fabric (1.2.8):
+    - Fabric/Base (= 1.2.8)
+  - Fabric/Base (1.2.8)
 
 DEPENDENCIES:
   - AFNetworking
+  - Crashlytics
+  - Fabric
 
 SPEC CHECKSUMS:
   AFNetworking: 41d45d2c14219af0fa5addf3cfd433a002c13c9f
+  Crashlytics: 1eef152dd21c1f2f9d9dbe115e637c77c6ffcc8e
+  Fabric: a9eabe53915e9f1db55a84dd2838737928675878
 
 COCOAPODS: 0.36.0.beta.1
